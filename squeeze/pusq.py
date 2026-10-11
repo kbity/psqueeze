@@ -19,7 +19,7 @@ def main():
                     ofn = squeeze.getfilename(dat)
                 with open(ofn, "wb") as o:
                     print(f"{arg} -> {ofn}: ", end='')
-                    o.write(squeeze.uncompress(dat, log=True))
+                    o.write(squeeze.decompress(dat, log=True))
         except FileNotFoundError:
             print(f"Can't open {arg}")
 
@@ -35,6 +35,6 @@ def main():
                     dat = i.read()
                     ofn = squeeze.getfilename(dat)
                     with open(ofn, "wb") as o:
-                        o.write(squeeze.uncompress(dat, log=True))
+                        o.write(squeeze.decompress(dat, log=True))
             except FileNotFoundError:
                 print(f"Can't open {fn}")

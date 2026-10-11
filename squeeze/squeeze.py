@@ -237,7 +237,7 @@ def getfilename(sq: bytes):
             break
     return fn
 
-def uncompress(sq: bytes, returnfilename: bool = False, log: bool = False):
+def decompress(sq: bytes, returnfilename: bool = False, log: bool = False):
     if not sq:
         raise ValueError("Expected Squeeze Archive, got empty file!")
     if not sq.startswith(b'v\xff'):

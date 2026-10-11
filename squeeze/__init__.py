@@ -6,4 +6,4 @@ from .pusq import main as ucli
 
 compress = squeeze.compress
 
-uncompress = squeeze.uncompress
+decompress = squeeze.decompress
