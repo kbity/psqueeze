@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psqueeze"
+version = "1.0.0"
+description = "Pure Python implementation of Richard Greenlaw's Squeeze compression format"
+authors = [{name = "Mari (kbity)"}]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+psq = "squeeze:cli"
+pusq = "squeeze:ucli"
